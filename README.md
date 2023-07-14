@@ -1,6 +1,6 @@
 # Servidor de Login Separado
 
-Este projeto é um servidor de login separado construído com o framework Express. Ele lida especificamente com a autenticação de usuários, fornecendo endpoints e funcionalidades para registro, login, validação de token de sessão e administração de usuário.
+Este projeto é um servidor de login que tem o objetivo de funcionar separadamente do servidor principal, construído com o framework Express. Ele lida especificamente com a autenticação de usuários, fornecendo endpoints e funcionalidades para registro, login, validação de token de sessão e administração de usuário.
 
 ## Vantagens
 - Separação de lógica: mantendo o código de autenticação separado do restante do aplicativo.
@@ -16,6 +16,7 @@ Este projeto é um servidor de login separado construído com o framework Expres
 - Bcrypt: biblioteca para hash de senhas e criptografia.
 - Jsonwebtoken: biblioteca para gerenciar os tokens de sessão.
 - Sequelize: ORM para manipulação do banco de dados.
+- Sequelize-cli: CLI responsável por executar as migrations e seeders do projeto.
 - Postgres: Banco de dados que armazena as informações de login.
 
 ## Instalação e Configuração
@@ -26,7 +27,7 @@ Este projeto é um servidor de login separado construído com o framework Expres
 5. Utilize `npm run migrate` para gerar as tabelas no banco de dados.
 6. Utilize `npm run setup` para inserir as informações inicias no banco.
 7. Utilize `npm run start` para iniciar o servidor.
-8. Crie o seu usuário realizando um `post` na api na rota signup `localhost/signup` mandando o seguinte objeto no corpo da requisição
+8. Crie o seu usuário realizando um `post` na api na rota signup `localhost/signup` mandando o seguinte objeto no corpo da requisição:
 ```JSON
 {   
     "email": "example@example.com",

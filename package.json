@@ -1,0 +1,27 @@
+{
+  "name": "login_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "setup": "sequelize db:seed:all --config=app/config/config.json --seeders-path=app/seeders",
+    "migrate": "sequelize db:migrate --config=app/config/config.json --migrations-path=app/migrations",
+    "create-migration": "npx sequelize-cli migration:generate --migrations-path=app/migrations --name",
+    "create-seeder": "sequelize seed:generate --seeders-path=app/seeders --name"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.1",
+    "nodemon": "^3.0.1",
+    "pg": "^8.11.1",
+    "sequelize": "^6.32.1",
+    "sequelize-cli": "^6.6.1"
+  }
+}

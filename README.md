@@ -1,4 +1,4 @@
-# Servidor de Login Separado
+# Servidor de Login Centralizado
 
 Este projeto é um servidor de login que tem o objetivo de funcionar separadamente do servidor principal, construído com o framework Express. Ele lida especificamente com a autenticação de usuários, fornecendo endpoints e funcionalidades para registro, login, validação de token de sessão e administração de usuário.
 

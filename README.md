@@ -4,12 +4,13 @@ Este projeto é um servidor de login que tem o objetivo de funcionar separadamen
 
 ## Vantagens
 - Separação de lógica: mantendo o código de autenticação separado do restante do aplicativo.
-- Melhor segurança: implemente medidas de segurança específicas para autenticação.
-- Escalabilidade: reutilize o servidor de login em diferentes projetos ou aplicativos.
+- Melhor segurança: possibilidade de implementar medidas de segurança específicas para autenticação.
+- Escalabilidade: centraliza o servidor de login para que possa funcionar em diferentes projetos ou aplicativos.
 
 ## Desvantagens
 - Complexidade adicional: o projeto se torna mais complexo devido à necessidade de gerenciamento da comunicação entre o servidor de login e o aplicativo principal.
 - Overhead de comunicação: pode haver uma sobrecarga adicional de comunicação entre o servidor de login e o aplicativo.
+- Custo pode ser maior do que o login tradicional, dependendo do tamanho do projeto.
 
 ## Tecnologias Utilizadas
 - Express: framework web para Node.js.
